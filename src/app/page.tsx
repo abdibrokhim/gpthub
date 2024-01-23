@@ -413,7 +413,7 @@ export default function Home()
               </div>
             </div>
           </div>
-          <div className="self-stretch flex w-full justify-start md:justify-between md:items-center flex-col gap-6 md:flex-row md:gap-8">
+          <div className="self-stretch flex w-full justify-start md:justify-between md:items-center flex-col gap-6 md:flex-row md:gap-8 pt-8">
             <div className="flex flex-col gap-1">
               <p className="font-title !font-medium text-2xl text-gray-700">Did we pique your interest?</p>
               <p className="text-gray-700">We'd be happy to learn more about your business and how we can help.</p>

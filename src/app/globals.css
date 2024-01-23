@@ -16,8 +16,12 @@
   }
 }
 
+html {
+  font-family: Space Grotesk,sans-serif;
+}
+
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Space Grotesk,sans-serif;
   color: rgb(55 65 81);
   background: linear-gradient(
       to bottom,
@@ -48,4 +52,18 @@ body {
   border-width: 1px!important;
   --tw-border-opacity: 1!important;
   border-color: rgb(52 64 84/var(--tw-border-opacity))!important;
+}
+
+.shadow-md, .shadow-sm {
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 5px 5px 0px 0px #475467;
+  --tw-shadow-colored: 5px 5px 0px 0px var(--tw-shadow-color);
+}
+
+.font-title {
+  font-family: Space Grotesk,sans-serif;
+  font-weight: 400;
 }
