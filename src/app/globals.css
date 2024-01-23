@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(55 65 81);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.integration_animation {
+  display: flex;
+  animation: marquee 20s linear 0s infinite normal none running;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(5%); }
+  100% { transform: translateX(-5%); }
+}
+
+.boxed {
+  border-radius: 0.25rem;
+  border-width: 1px!important;
+  --tw-border-opacity: 1!important;
+  border-color: rgb(52 64 84/var(--tw-border-opacity))!important;
+}
