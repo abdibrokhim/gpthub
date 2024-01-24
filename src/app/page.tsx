@@ -2,6 +2,9 @@ import Image from "next/image";
 import brain from '../app/assets/brain.png';
 import './globals.css';
 
+// @ts-ignore
+import {logo} from '../app/shared.tsx';
+
 
 export default function Home() 
 { 
@@ -12,7 +15,9 @@ export default function Home()
         <div className="navbar w-full relative !h-16 border-b-[1px] border-gray-700 px-8 md:px-0">
           <div className="flex justify-between items-center m-auto w-full md:w-4/5 2xl:w-3/5 relative">
             <div className="flex items-center gap-2">
-            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">GPTHub</a>
+            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">
+            {logo}
+            </a>
             </div>
             <a className="cta-top flex items-center rounded-md hover:opacity-80 active:opacity-60 active:scale-95 transition-all text-white text-[14px] px-4 h-[40px] shrink-0 grow-0 btn hover:opacity-80 !bg-gray-800 !text-white !bg-none !text-[14px] px-4 !h-[44px]" href="/contact">
               <p className="whitespace-nowrap">Book Demo</p>
@@ -437,7 +442,9 @@ export default function Home()
       </main>
       <footer className="py-6 px-4 md:px-0 border-t-[1px] border-gray-700 w-full !bg-white">
         <div className="flex flex-col md:flex-row justify-between gap-4 m-auto w-full md:w-4/5 2xl:w-3/5">
-          <a className="clickable" href="/"> </a>
+            <a className="clickable btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">
+              {logo}
+            </a>
           <div className="flex items-center gap-x-16 gap-y-4 flex-wrap text-gray-600 text-xs"> <a className="link link-hover whitespace-nowrap" href="/terms">Terms</a> <a className="link link-hover whitespace-nowrap" href="/privacy">Privacy Policy</a> <a className="link link-hover whitespace-nowrap" href="/about">About</a>
             <p className="whitespace-nowrap">© 2024 GPTHub, Inc.</p>
             <div className="flex items-center gap-3"> 

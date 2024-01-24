@@ -1,4 +1,6 @@
 import '../globals.css';
+// @ts-ignore
+import {logo} from '../shared.tsx';
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
        <div className="navbar w-full relative !h-16 border-b-[1px] border-gray-700 px-8 md:px-0">
         <div className="flex justify-between items-center m-auto w-full md:w-4/5 2xl:w-3/5 relative">
           <div className="flex items-center gap-2">
-            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">GPTHub</a>
+            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">{logo}</a>
 
           </div>
           <div className="flex gap-4 items-center">
