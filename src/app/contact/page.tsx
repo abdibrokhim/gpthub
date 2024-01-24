@@ -1,4 +1,4 @@
-import Image from "next/image";
+import '../globals.css';
 
 export default function Contact() {
   return (
@@ -9,7 +9,7 @@ export default function Contact() {
        <div className="navbar w-full relative !h-16 border-b-[1px] border-gray-700 px-8 md:px-0">
         <div className="flex justify-between items-center m-auto w-full md:w-4/5 2xl:w-3/5 relative">
           <div className="flex items-center gap-2">
-          <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-900 text-xl" href="/">GPTHub</a>
+          <a className="btn !border-0 bg-transparent px-0 mx-4 text-black text-xl font-black text-gray-700" href="/">GPTHub</a>
 
           </div>
           <div className="flex gap-4 items-center">
@@ -31,7 +31,7 @@ export default function Contact() {
           <p className="mb-4 italic">We appreciate your interest.</p>
           <p className="mb-4">Click the button below and fill out the form, please.</p>
           <div className="inline-block">
-          <a className="cta-top flex items-center rounded-md hover:opacity-80 active:opacity-60 active:scale-95 transition-all text-white text-[14px] px-4 h-[40px] shrink-0 grow-0 btn hover:opacity-80 !bg-gray-800 !text-white !bg-none !text-[14px] px-4 !h-[44px]" href="/contact">
+          <a className="cta-top flex items-center rounded-md hover:opacity-80 active:opacity-60 active:scale-95 transition-all text-white text-[14px] px-4 h-[40px] shrink-0 grow-0 btn hover:opacity-80 !bg-gray-800 !text-white !bg-none !text-[14px] px-4 !h-[44px]" href="https://airtable.com/appvmNBXIa5cJvo9I/pagVR3PodI12IdPYQ/form">
       <p className="whitespace-nowrap">Proceed</p>
       </a>
           </div>

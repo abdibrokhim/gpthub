@@ -1,5 +1,6 @@
 import Image from "next/image"; 
 import brain from '../app/assets/brain.png';
+import './globals.css';
 
 
 export default function Home() 
@@ -11,7 +12,7 @@ export default function Home()
         <div className="navbar w-full relative !h-16 border-b-[1px] border-gray-700 px-8 md:px-0">
           <div className="flex justify-between items-center m-auto w-full md:w-4/5 2xl:w-3/5 relative">
             <div className="flex items-center gap-2">
-            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-900 text-xl" href="/">GPTHub</a>
+            <a className="btn !border-0 bg-transparent px-0 mx-4 text-gray-700 text-xl font-black" href="/">GPTHub</a>
             </div>
             <a className="cta-top flex items-center rounded-md hover:opacity-80 active:opacity-60 active:scale-95 transition-all text-white text-[14px] px-4 h-[40px] shrink-0 grow-0 btn hover:opacity-80 !bg-gray-800 !text-white !bg-none !text-[14px] px-4 !h-[44px]" href="/contact">
               <p className="whitespace-nowrap">Book Demo</p>
@@ -72,8 +73,8 @@ export default function Home()
                 </svg>
               </div>
               <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">Exceptionally easy to set up</p>
-                <p className="text-gray-700">We pride ourselves on our fast onboarding process. Create all your inbound and outbound campaigns in less than an hour.</p>
+                <p className="font-title !font-medium text-xl text-gray-700">Ready for business</p>
+                <p className="text-gray-700">We pride ourselves on our ability to deliver a solution that is tailored to your business needs.</p>
               </div>
             </div>
             <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
@@ -83,8 +84,8 @@ export default function Home()
                 </svg>
               </div>
               <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">Ultra low latency</p>
-                <p className="text-gray-700">GPTHub leverages a proprietary algorithm to deliver an industry-leading &lt;2 second silence-to-speech delay and scales to thousands of simultaneous calls.</p>
+                <p className="font-title !font-medium text-xl text-gray-700">Powered by OpenAI's GPT4</p>
+                <p className="text-gray-700">GPTHub leverages a proprietary algorithm to deliver an industry-leading Custom GPTs.</p>
               </div>
             </div>
             <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
@@ -94,30 +95,8 @@ export default function Home()
                 </svg>
               </div>
               <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">No more missed calls</p>
-                <p className="text-gray-700">GPTHub answers phone calls 24/7, and it can take multiple calls at the same time without breaking a sweat.</p>
-              </div>
-            </div>
-            <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
-              <div className="flex justify-center items-center h-[40px] w-[40px] rounded bg-rose-800">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-white iconify iconify--fluent" width="20" height="20" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M11 8.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zm6 0a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zm-3 1.5a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0zm-6 .5a.75.75 0 0 0-1.5 0v2.5a.75.75 0 0 0 1.5 0zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M3.5 12a8.5 8.5 0 1 1 17 0a8.5 8.5 0 0 1-17 0"></path>
-                </svg>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">Natural-sounding voices</p>
-                <p className="text-gray-700">GPTHub comes with a variety of voices to choose from, or create your own voice from a single voice recording.</p>
-              </div>
-            </div>
-            <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
-              <div className="flex justify-center items-center h-[40px] w-[40px] rounded bg-cyan-700">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-white iconify iconify--fluent" width="20" height="20" viewBox="0 0 16 16">
-                  <path fill="currentColor" d="M6 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0M2 4a3 3 0 0 1 3-3h6a3 3 0 1 1 0 6H5a3 3 0 0 1-3-3m3-2a2 2 0 1 0 0 4h6a2 2 0 1 0 0-4zm6 10a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-9-1a3 3 0 0 1 3-3h6a3 3 0 1 1 0 6H5a3 3 0 0 1-3-3m3-2a2 2 0 1 0 0 4h6a2 2 0 1 0 0-4z"></path>
-                </svg>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">Stay in control</p>
-                <p className="text-gray-700">Fallback calls to a human, forward calls to other lines, set up custom routing rules, or just turn GPTHub off on-demand.</p>
+                <p className="font-title !font-medium text-xl text-gray-700">OAuth Authentication</p>
+                <p className="text-gray-700">Your custom GPT uses OAuth to authenticate, so you don't have to worry about security.</p>
               </div>
             </div>
             <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
@@ -128,7 +107,7 @@ export default function Home()
               </div>
               <div className="flex flex-col gap-1">
                 <p className="font-title !font-medium text-xl text-gray-700">Integrate with your apps</p>
-                <p className="text-gray-700">GPTHub plugs into and leverages a multitude of apps like Hubspot, Google Calendar, Salesforce, and Resy.</p>
+                <p className="text-gray-700">Your custom GPT plugs into and leverages a multitude of apps like Airtable, Monday, Zapier, and you name it.</p>
               </div>
             </div>
           </div>
@@ -139,7 +118,7 @@ export default function Home()
             <p className="text-gray-700">Integrate with any existing apps and workflows.</p>
           </div>
           <div className="boxed bg-white shadow-md py-8 overflow-hidden max-w-full">
-            <div className="whitespace-nowrap inline-block">
+            <div className="whitespace-nowrap inline-block integration_animation">
               <a title="GMail" href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" className="inline-block mx-8">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="iconify iconify--logos" width="53.06" height="40" viewBox="0 0 256 193">
                   <path fill="#4285F4" d="M58.182 192.05V93.14L27.507 65.077L0 49.504v125.091c0 9.658 7.825 17.455 17.455 17.455z"></path>
@@ -249,57 +228,37 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Fast voices</p>
+                      <p>Name</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Unlimited campaigns</p>
+                      <p>Description</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Unlimited integrations</p>
+                      <p>Base instructions</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Export transcripts</p>
-                    </li>
-                  </ul>
-                  <ul className="text-sm flex flex-col gap-1">
-                    <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-red-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
-                        <path fill="currentColor" d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10m1.854-6.854a.5.5 0 0 1 0 .708L6.707 6l1.147 1.146a.5.5 0 1 1-.708.708L6 6.707L4.854 7.854a.5.5 0 1 1-.708-.708L5.293 6L4.146 4.854a.5.5 0 1 1 .708-.708L6 5.293l1.146-1.147a.5.5 0 0 1 .708 0"></path>
-                      </svg>
-                      <p>Up to 3 simultaneous calls</p>
+                      <p>Up to 2 conversation starters</p>
                     </li>
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-red-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
-                        <path fill="currentColor" d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10m1.854-6.854a.5.5 0 0 1 0 .708L6.707 6l1.147 1.146a.5.5 0 1 1-.708.708L6 6.707L4.854 7.854a.5.5 0 1 1-.708-.708L5.293 6L4.146 4.854a.5.5 0 1 1 .708-.708L6 5.293l1.146-1.147a.5.5 0 0 1 .708 0"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>1 designated phone number</p>
+                      <p>Up to 5 custom knowledge files</p>
                     </li>
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-red-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
-                        <path fill="currentColor" d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10m1.854-6.854a.5.5 0 0 1 0 .708L6.707 6l1.147 1.146a.5.5 0 1 1-.708.708L6 6.707L4.854 7.854a.5.5 0 1 1-.708-.708L5.293 6L4.146 4.854a.5.5 0 1 1 .708-.708L6 5.293l1.146-1.147a.5.5 0 0 1 .708 0"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Natural-sounding voices</p>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-red-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
-                        <path fill="currentColor" d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10m1.854-6.854a.5.5 0 0 1 0 .708L6.707 6l1.147 1.146a.5.5 0 1 1-.708.708L6 6.707L4.854 7.854a.5.5 0 1 1-.708-.708L5.293 6L4.146 4.854a.5.5 0 1 1 .708-.708L6 5.293l1.146-1.147a.5.5 0 0 1 .708 0"></path>
-                      </svg>
-                      <p>Custom voices</p>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-red-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
-                        <path fill="currentColor" d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10m1.854-6.854a.5.5 0 0 1 0 .708L6.707 6l1.147 1.146a.5.5 0 1 1-.708.708L6 6.707L4.854 7.854a.5.5 0 1 1-.708-.708L5.293 6L4.146 4.854a.5.5 0 1 1 .708-.708L6 5.293l1.146-1.147a.5.5 0 0 1 .708 0"></path>
-                      </svg>
-                      <p>Call forwarding</p>
+                      <p>Let's talk...</p>
                     </li>
                   </ul>
                 </nav>
@@ -330,37 +289,61 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>All state-of-the-art voices</p>
+                      <p>Complex instructions</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Custom voices</p>
+                      <p>Logo design</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Up to 6 simultaneous calls</p>
+                      <p>High security</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Up to 3 designated phone numbers</p>
+                      <p>Privacy policy</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Bring your own phone number</p>
+                      <p>Up to 4 conversation starters</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Call forwarding</p>
+                      <p>Up to 10 custom knowledge files</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Up to 2 API integration</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Up to 10 API endpoints</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>API Key Authentication</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Let's talk...</p>
                     </li>
                   </ul>
                 </nav>
@@ -397,13 +380,37 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Create custom integrations</p>
+                      <p>OAuth Authentication</p>
                     </li>
                     <li className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>More a la carte features</p>
+                      <p>Up to 4+ conversation starters</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Up to 20 custom knowledge files</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Up to 2+ API integration</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Up to 10+ API endpoints</p>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
+                        <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
+                      </svg>
+                      <p>Let's talk...</p>
                     </li>
                   </ul>
                 </nav>
