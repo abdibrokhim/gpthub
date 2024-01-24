@@ -40,7 +40,7 @@ export default function Home()
             </span> </div>
             <div className="w-full"> <span className="flex flex-col gap-2 text-gray-500 text-[16px]">
               <p>GPTHub provides a diverse array of specialized GPTs designed to enhance any business, meticulously crafted by our team of expert Prompt Engineers.</p>
-              <b>We won't charge you until you're happy.</b>
+              <b>{`We won't charge you until you're happy.`}</b>
             </span> </div>
             <div className="flex justify-start items-center gap-2 mt-4">
               <div className="flex flex-col gap-8">
@@ -69,7 +69,7 @@ export default function Home()
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <p className="font-medium text-2xl text-gray-700">What's in the goodie bag?</p>
+          <p className="font-medium text-2xl text-gray-700">{`What's in the goodie bag?`}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
               <div className="flex justify-center items-center h-[40px] w-[40px] rounded bg-emerald-700">
@@ -89,7 +89,7 @@ export default function Home()
                 </svg>
               </div>
               <div className="flex flex-col gap-1">
-                <p className="font-title !font-medium text-xl text-gray-700">Powered by OpenAI's GPT4</p>
+                <p className="font-title !font-medium text-xl text-gray-700">{`Powered by OpenAI's GPT4`}</p>
                 <p className="text-gray-700">GPTHub leverages a proprietary algorithm to deliver an industry-leading Custom GPTs.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Home()
               </div>
               <div className="flex flex-col gap-1">
                 <p className="font-title !font-medium text-xl text-gray-700">OAuth Authentication</p>
-                <p className="text-gray-700">Your custom GPT uses OAuth to authenticate, so you don't have to worry about security.</p>
+                <p className="text-gray-700">{`Your custom GPT uses OAuth to authenticate, so you don't have to worry about security.`}</p>
               </div>
             </div>
             <div className="boxed p-6 flex flex-col gap-3 shadow-md bg-white">
@@ -263,7 +263,7 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Let's talk...</p>
+                      <p>{`Let's talk...`}</p>
                     </li>
                   </ul>
                 </nav>
@@ -348,7 +348,7 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Let's talk...</p>
+                      <p>{`Let's talk...`}</p>
                     </li>
                   </ul>
                 </nav>
@@ -415,7 +415,7 @@ export default function Home()
                       <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="text-green-700 shrink-0 iconify iconify--fluent" width="1em" height="1em" viewBox="0 0 12 12">
                         <path fill="currentColor" d="M1 6a5 5 0 1 1 10 0A5 5 0 0 1 1 6m7.354-.896a.5.5 0 1 0-.708-.708L5.5 6.543L4.354 5.396a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"></path>
                       </svg>
-                      <p>Let's talk...</p>
+                      <p>{`Let's talk...`}</p>
                     </li>
                   </ul>
                 </nav>
@@ -428,7 +428,7 @@ export default function Home()
           <div className="self-stretch flex w-full justify-start md:justify-between md:items-center flex-col gap-6 md:flex-row md:gap-8 pt-8">
             <div className="flex flex-col gap-1">
               <p className="font-title !font-medium text-2xl text-gray-700">Did we pique your interest?</p>
-              <p className="text-gray-700">We'd be happy to learn more about your business and how we can help.</p>
+              <p className="text-gray-700">{`We'd be happy to learn more about your business and how we can help.`}</p>
             </div>
             <div className="shrink-0">
               <div className="flex flex-1">

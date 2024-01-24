@@ -38,7 +38,7 @@ export default function About() {
               <p className="text-3xl text-gray-800">Mission</p>
             </div>
             <div className="flex flex-col gap-4 text-gray-700">
-              <p>We're on mission to offer versatile GPT AI Agents for a broad spectrum of applications, from education to business, utilizing OpenAI's advanced GPT Builder. We are dedicated to enabling seamless integration of customized AI across diverse use cases, ensuring each solution is perfectly aligned with the specific needs and goals of our clients. Our commitment lies in empowering sectors with AI-driven innovation and efficiency, tailored precisely for every unique scenario.</p>
+              <p>{`We're on mission to offer versatile GPT AI Agents for a broad spectrum of applications, from education to business, utilizing OpenAI's advanced GPT Builder. We are dedicated to enabling seamless integration of customized AI across diverse use cases, ensuring each solution is perfectly aligned with the specific needs and goals of our clients. Our commitment lies in empowering sectors with AI-driven innovation and efficiency, tailored precisely for every unique scenario.`}</p>
             </div>
           </div>
           <div className="h-[1px] bg-gray-700 w-full"></div>
