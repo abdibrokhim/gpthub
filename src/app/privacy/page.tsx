@@ -35,7 +35,7 @@ export default function Privacy() {
         <div className="bg-white boxed p-8">
           <h1 className="text-[36px] font-bold mb-4">Privacy Policy</h1>
           <p className="mb-4 italic">Last updated: January 23, 2024</p>
-          <p className="mb-4">This Privacy Policy describes how GPTHub, Inc. ("GPTHub") collects, uses, and discloses information about you through the GPTHub services, website, and application (together, the "Services"). By using the Services you agree to the collection, use, and disclosure of your information as outlined in this Privacy Policy.</p>
+          <p className="mb-4">This Privacy Policy describes how GPTHub, Inc. {`("GPTHub")`} collects, uses, and discloses information about you through the GPTHub services, website, and application (together, the {`"Services"`}). By using the Services you agree to the collection, use, and disclosure of your information as outlined in this Privacy Policy.</p>
           <h2 className="text-2xl font-bold mb-2">1. Information We Collect</h2>
           <p className="mb-4">We may collect information about you when you use the Services. This includes:</p>
           <ul className="list-disc list-inside mb-4">

@@ -34,7 +34,7 @@ export default function Terms() {
 	<div className="bg-white boxed p-8">
 		<h1 className="text-[36px] font-bold mb-4">Terms</h1>
 		<p className="mb-4 italic">Last updated: January 23, 2024</p>
-		<p className="mb-4">These Terms of Service ("Terms") apply to your access and use of the GPTHub services, website, and application (together, the "Services"). The Services are provided by GPTHub, Inc. ("GPTHub"). By using the Services you agree to be bound by these Terms.</p>
+		<p className="mb-4">These Terms of Service ({`"Terms"`}) apply to your access and use of the GPTHub services, website, and application (together, the {`"Services"`}). The Services are provided by GPTHub, Inc. ({`"GPTHub"`}). By using the Services you agree to be bound by these Terms.</p>
 		<h2 className="text-2xl font-bold mb-2">1. Eligibility</h2>
 		<p className="mb-4">{`You must be at least 13 years old to use the Services. If you are under 18 years old, you confirm that you have your parent or guardian's permission to use the Services and that they have read and agreed to these Terms on your behalf. If you do not have this permission, you may not use the Services.`}</p>
 		<h2 className="text-2xl font-bold mb-2">2. Your Use of the Services</h2>
@@ -47,7 +47,7 @@ export default function Terms() {
 		<h2 className="text-2xl font-bold mb-2">5. Ownership and Intellectual Property</h2>
 		<p className="mb-4">GPTHub and our licensors own all rights, title, and interest in the Services, including all intellectual property rights. You agree not to copy, modify, distribute, sell, or lease any part of our Services.</p>
 		<h2 className="text-2xl font-bold mb-2">6. Disclaimers</h2>
-		<p className="mb-4">YOUR USE OF THE SERVICES IS AT YOUR OWN RISK. THE SERVICES ARE PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTY OF ANY KIND. GPTHUB DISCLAIMS ALL WARRANTIES EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. GPTHUB DOES NOT WARRANT THAT THE SERVICES ARE SECURE, FREE FROM BUGS OR VIRUSES, OR THAT YOUR INFORMATION WILL NOT BE INTERCEPTED.</p>
+		<p className="mb-4">YOUR USE OF THE SERVICES IS AT YOUR OWN RISK. THE SERVICES ARE PROVIDED ON AN {`"AS IS"`} BASIS WITHOUT WARRANTY OF ANY KIND. GPTHUB DISCLAIMS ALL WARRANTIES EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. GPTHUB DOES NOT WARRANT THAT THE SERVICES ARE SECURE, FREE FROM BUGS OR VIRUSES, OR THAT YOUR INFORMATION WILL NOT BE INTERCEPTED.</p>
 		<h2 className="text-2xl font-bold mb-2">7. Limitation of Liability</h2>
 		<p className="mb-4">GPTHUB WILL NOT BE LIABLE TO YOU FOR ANY LOST PROFITS OR CONSEQUENTIAL, SPECIAL, PUNITIVE, INDIRECT, OR INCIDENTAL DAMAGES RELATING TO THESE TERMS OR THE SERVICES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 		<h2 className="text-2xl font-bold mb-2">8. Changes to these Terms</h2>
