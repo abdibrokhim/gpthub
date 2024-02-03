@@ -2,11 +2,13 @@ import '../globals.css';
 import Footer from '../footer';
 
 import HeaderSecondary from '../header-secondary';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Contact() {
   return (
       <div className="flex flex-col w-full min-h-screen">
+      <Analytics />
         
 <HeaderSecondary/>
 

@@ -5,6 +5,7 @@ import './globals.css';
 import {logo} from '../app/shared';
 import Footer from './footer';
 import HeaderPrimary from './header-primary';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Home() 
@@ -12,6 +13,7 @@ export default function Home()
   return (
 
     <div className="flex flex-col w-full">
+      <Analytics />
       <HeaderPrimary/>
       <main className="flex-1 flex flex-col gap-16 px-4 md:px-0 py-24 m-auto w-full md:w-4/5 2xl:w-3/5">
         <div className="flex flex-col md:flex-row md:items-center gap-16">

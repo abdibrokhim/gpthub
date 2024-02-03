@@ -3,11 +3,13 @@ import '../globals.css';
 import Footer from '../footer';
 
 import HeaderSecondary from '../header-secondary';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Privacy() {
   return (
       <div className="flex flex-col w-full">
+      <Analytics />
        
 <HeaderSecondary/>
       

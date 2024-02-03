@@ -17,6 +17,7 @@ import { toast } from 'react-toastify';
 import { clear } from 'console';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Analytics } from '@vercel/analytics/react';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -283,6 +284,7 @@ function submitGpt() {
 
   return (
       <div className="flex flex-col gap-4 items-center justify-center min-h-screen w-full">
+      <Analytics />
        
 <HeaderSecondary/>
 

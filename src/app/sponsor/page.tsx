@@ -3,11 +3,13 @@ import '../globals.css';
 import HeaderSecondary from '../header-secondary';
 
 import Footer from '../footer';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Sponsor() {
   return (
       <div className="flex flex-col w-full">
+      <Analytics />
 
       <HeaderSecondary />
         

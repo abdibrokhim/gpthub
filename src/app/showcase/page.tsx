@@ -16,6 +16,7 @@ import { getAnalytics } from "firebase/analytics";
 import { firebaseConfig } from '../firebase-config';
 import { useEffect, useState } from 'react';
 import { GptData } from './types';
+import { Analytics } from '@vercel/analytics/react';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -140,6 +141,7 @@ export default function Showcase()
   return (
     
     <div className="flex flex-col w-full">
+      <Analytics />
 
       <nav className="w-full pt-4">
         
