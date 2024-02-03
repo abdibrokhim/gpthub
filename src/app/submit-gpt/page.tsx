@@ -36,6 +36,7 @@ export default function SubmitGpt() {
   const [imageUrl, setImageUrl] = useState('');
   const [demoUrl, setDemoUrl] = useState('');
   const [category, setCategory] = useState('');
+  const [showModal, setShowModal] = useState(false);
 
   const [loading, setLoading] = useState(false);
 
@@ -272,6 +273,7 @@ function submitGpt() {
     clearForm();
 
     setLoading(false);
+    setShowModal(true);
   }
 
   saveGpt();
@@ -286,6 +288,25 @@ function submitGpt() {
 
   <div className="m-auto w-[95%] md:w-4/5 max-w-[600px] flex flex-col gap-4 relative py-8">
   <ToastContainer />
+
+  {showModal && (
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
+          <div className="bg-white p-5 rounded-lg shadow-lg text-center">
+            <h3 className="text-lg font-bold">Thank You!</h3>
+            <div className="flex flex-col gap-2">
+              <p>Your submission has been received.</p>
+              <p>After approval, it will be showcased on our website.</p>
+            </div>
+            <div className='pt-4'></div>
+            <button 
+              className="w-full cta-top flex text-center justify-center items-center rounded-md hover:opacity-80 active:opacity-60 active:scale-95 transition-all text-white text-[14px] px-4 h-[40px] shrink-0 grow-0 btn hover:opacity-80 !bg-gray-800 !text-white !bg-none !text-[14px] px-4 !h-[44px]"
+              onClick={() => setShowModal(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     <span className="absolute right-[10px] md:-right-[140px] -top-[10px] md:top-[100px] -z-10">
       <div className="border-[1px] border-[#FEC84B] rounded-[100%] animate-pulse px-6">
         <svg className="fill-[#FEC84B] -my-2" width="50" height="44" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

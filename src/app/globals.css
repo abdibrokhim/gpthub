@@ -106,3 +106,30 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+.tooltip-text-secondary {
+  font-size: 14px;
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: start;
+  border-radius: 6px;
+  padding: 10px 20px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1000;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -100px; /* Use half of the width value */
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text-secondary {
+  visibility: visible;
+  opacity: 1;
+}
