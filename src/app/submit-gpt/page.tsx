@@ -229,8 +229,24 @@ function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 
 }
 
+const generateUUID = () => {
+  const date = new Date();
+  const dateString = date.toISOString().split('T')[0];
+  const timestamp = date.getTime();
 
-function submitGpt() {
+  const uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0,
+        v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+  
+  return `${uuid}-${dateString}-${timestamp}`;
+};
+
+
+
+
+const submitGpt = async () => {
 
   if (!isFormValid()) {
     showToast('Please fill out all fields', 'warning');
@@ -248,6 +264,7 @@ function submitGpt() {
   }
 
   const gptData: GptData = {
+    uuid: generateUUID(),
     created_at: new Date(),
     created_by: businessName,
     category: category,

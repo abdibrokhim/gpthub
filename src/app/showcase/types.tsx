@@ -1,4 +1,5 @@
 export type GptData = {
+    uuid: string;
     category: string;
     company_url: string;
     created_at: Date;
